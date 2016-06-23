@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="kz0-8m-tlc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Left View Controller-->
+        <scene sceneID="A6f-eH-No6">
+            <objects>
+                <viewController id="kz0-8m-tlc" customClass="LeftViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BGk-cw-DUk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Deq-ER-8c4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HhE-hP-dHp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXE-Vi-cAN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NPU-XX-ycK">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="kz0-8m-tlc" id="34c-Y8-lp8"/>
+                                            <outlet property="delegate" destination="kz0-8m-tlc" id="l2s-Wc-aFh"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="NPU-XX-ycK" firstAttribute="leading" secondItem="UXE-Vi-cAN" secondAttribute="leading" id="IDQ-aE-fvY"/>
+                                    <constraint firstAttribute="bottom" secondItem="NPU-XX-ycK" secondAttribute="bottom" id="Lug-gz-xug"/>
+                                    <constraint firstItem="NPU-XX-ycK" firstAttribute="top" secondItem="UXE-Vi-cAN" secondAttribute="top" id="Obe-64-8ve"/>
+                                    <constraint firstAttribute="trailing" secondItem="NPU-XX-ycK" secondAttribute="trailing" id="Xat-2c-oiN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UXE-Vi-cAN" firstAttribute="top" secondItem="BGk-cw-DUk" secondAttribute="bottom" id="X4c-ga-yRs"/>
+                            <constraint firstItem="UXE-Vi-cAN" firstAttribute="leading" secondItem="HhE-hP-dHp" secondAttribute="leading" id="cg4-PE-sei"/>
+                            <constraint firstAttribute="trailing" secondItem="UXE-Vi-cAN" secondAttribute="trailing" id="dan-Re-enw"/>
+                            <constraint firstItem="Deq-ER-8c4" firstAttribute="top" secondItem="UXE-Vi-cAN" secondAttribute="bottom" id="ig6-pD-zDG"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="NPU-XX-ycK" id="nt7-IR-IGE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DtS-ur-WOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="182"/>
+        </scene>
+    </scenes>
+</document>

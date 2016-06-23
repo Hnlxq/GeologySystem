@@ -1,0 +1,25 @@
+//
+//  Data.pch
+//  GeologySystem
+//
+//  Created by Migoo on 16/6/15.
+//  Copyright © 2016年 Migoo. All rights reserved.
+//
+
+#ifndef Data_pch
+#define Data_pch
+
+#import "UIView+Extension.h"
+#import "LiButton.h"
+#import "Constants.h"
+// RGB颜色
+#define HWColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+//设备的宽高
+#define SCREENHEIGHT      [UIScreen mainScreen].bounds.size.height
+#define SCREENWIDTH       [UIScreen mainScreen].bounds.size.width
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Data_pch */
